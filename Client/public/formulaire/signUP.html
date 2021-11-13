@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Créer un compte</title>
+        <script src="../formulaire/signUP.js"></script>
+    </head>
+    <body>
+        <form onsubmit=" creeCompte(event)">
+            <section>
+                <header>
+                    <h1>Créer un compte</h1>
+                </header>
+                <div>
+                    <label for="Nom">Nom: </label>
+                    <input type="text" name="Nom" id="Nom">
+                </div>
+
+                <div>
+                    <label for="Prenom">Prénom: </label>
+                    <input type="text" name="Prenom" id="Prenom">
+                </div>
+                <div>
+                    <label for="Courriel">Courriel: </label>
+                    <input type="email" name="Courriel" id="Courriel">
+                </div>
+
+                <div>
+                    <label for="Username">Nom d’utilisateur: </label>
+                    <input type="text" name="Username" id="Username">
+                </div>
+
+                <div>
+                    <label for="Password">Mot de passe: </label>
+                    <input type="password" name="Password" id="Password">
+                </div>
+
+                <div>
+                    <label for="Age">Âge: </label>
+                    <input type="number" name="Age" id="Age" step="any">
+                </div>
+
+                <div>
+                    <label for="Occupation">Occupation: </label>
+                    <input type="text" name="Occupation" id="Occupation">
+                </div>
+                <div>
+                    <label for="Description">Description: </label>
+                    <textarea name="Description" id="Description" rows="4" cols="50"> </textarea>
+                </div>
+
+                <input type="submit" value="Ajouter">
+            </section>
+        </form>
+    </body>
+</html>

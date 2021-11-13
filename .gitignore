@@ -1,0 +1,3 @@
+# Project exclude paths
+/Client/node_modules/
+/Serveur/node_modules/
