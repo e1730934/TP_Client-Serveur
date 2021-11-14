@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <script src="../formulaire/login.js"></script>
+    </head>
+    <body>
+        <form onsubmit=" connection(event)">
+            <div>
+                <label for="Username"> Nom d’utilisateur/courriel: </label>
+                <input type="text" name="Username" id="Username" autocomplete="username" placeholder="Nom d’utilisateur/courriel" required>
+            </div>
+            <div>
+                <label for="Password"> Mot de passe: </label>
+                <input type="password" name="Password" id="Password" autocomplete="current-password" placeholder="Mot de passe" required>
+            </div>
+            <input type="submit" value="Se connecter">
+        </form>
+    </body>
+</html>

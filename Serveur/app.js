@@ -1,7 +1,7 @@
 const express = require("express");
 const db = require('./database/requeteKnex')
 const cors = require("cors");
-const PORT = process.env.PORT || 2000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors());
@@ -34,6 +34,14 @@ app.post("/ajouterCompte", async (req, res) => {
     }
 })
 
+app.post("/connection", async (req,res) =>{
+    res.header("Access-Control-Allow-Origin", "*");
+    let loginInfo = {
+        "Username": req.body.Username,
+        "Password": req.body.Password
+    }
+//    TODO: Compléter POST
+})
 
 app.listen(PORT, () => {
     console.log(`Mon application roule sur le port ${PORT}`);

@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 2000;
 
 const app = express();
 app.use(cors());
@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.static("public"));
 
 app.get("/signup", (req, reponse) => {
-    reponse.sendFile(__dirname + "/public/formulaire/signUP.html");
+    reponse.sendFile(__dirname + "/public/formulaire/signUp.html");
 })
 
 app.listen(PORT, () => {
