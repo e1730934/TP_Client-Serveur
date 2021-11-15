@@ -27,20 +27,37 @@ app.post("/ajouterCompte", async (req, res) => {
         })
     } catch (err) {
         return res.status(500).json({
-                "success": false,
-                "error": err
-            }
-        )
+            "success": false,
+            "error": err
+        })
     }
 })
 
-app.post("/connection", async (req,res) =>{
+app.post("/connection", async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     let loginInfo = {
         "Username": req.body.Username,
         "Password": req.body.Password
     }
-//    TODO: Compléter POST
+    try {
+        let userInfo = await db.getUserInfo(loginInfo)
+        if (userInfo !== null) {
+            return res.status(200).json({
+                "success": true,
+                "data": userInfo
+            })
+        } else {
+            return res.status(500).json({
+                "success": false,
+                "error": 'Utilisateur ou mot de passe incorrecte'
+            })
+        }
+    } catch (e) {
+        return res.status(500).json({
+            "success": false,
+            "error": e.message
+        })
+    }
 })
 
 app.listen(PORT, () => {

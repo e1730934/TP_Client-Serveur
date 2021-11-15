@@ -11,6 +11,10 @@ app.get("/signup", (req, reponse) => {
     reponse.sendFile(__dirname + "/public/formulaire/signUp.html");
 })
 
+app.get("/login",(req,res) =>{
+    res.sendFile(__dirname + "/public/formulaire/login.html")
+})
+
 app.listen(PORT, () => {
     console.log(`Mon application frontale roule sur http://localhost:${PORT}`);
 })
