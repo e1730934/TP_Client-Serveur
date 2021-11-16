@@ -7,12 +7,16 @@ app.use(cors());
 
 app.use(express.static("public"));
 
-app.get("/signup", (req, reponse) => {
-    reponse.sendFile(__dirname + "/public/formulaire/signUp.html");
+app.get("/signup", (req, res) => {
+    res.sendFile(__dirname + "/public/formulaire/signUp.html");
 })
 
 app.get("/login",(req,res) =>{
     res.sendFile(__dirname + "/public/formulaire/login.html")
+})
+
+app.get("/user",(req,res) =>{
+    res.sendFile(__dirname + "/public/connectedUser/utilisateurConnecter.html")
 })
 
 app.listen(PORT, () => {

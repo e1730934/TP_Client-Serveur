@@ -9,7 +9,7 @@ function creeCompte(event){
         .then(resJson =>{
             if(resJson.success){
                 alert("Le compte a été ajouté.")
-                window.location.href = "http://localhost:2000/";
+                window.location.href = "http://localhost:2000/login";
             }
         })
         .catch(err =>{

@@ -3,36 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <title>Créer un compte</title>
+        <link rel="stylesheet" href="../formulaire/signUp.css">
         <script src="../formulaire/signUp.js"></script>
     </head>
     <body>
+        <header>
+            <h1>Créer un compte</h1>
+        </header>
         <form onsubmit=" creeCompte(event)">
             <section>
-                <header>
-                    <h1>Créer un compte</h1>
-                </header>
                 <div>
                     <label for="Nom">Nom: </label>
-                    <input type="text" name="Nom" id="Nom">
+                    <input type="text" name="Nom" id="Nom" required>
                 </div>
 
                 <div>
                     <label for="Prenom">Prénom: </label>
-                    <input type="text" name="Prenom" id="Prenom">
+                    <input type="text" name="Prenom" id="Prenom" required>
                 </div>
                 <div>
                     <label for="Courriel">Courriel: </label>
-                    <input type="email" name="Courriel" id="Courriel">
+                    <input type="email" name="Courriel" id="Courriel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </div>
 
                 <div>
                     <label for="Username">Nom d’utilisateur: </label>
-                    <input type="text" name="Username" id="Username">
+                    <input type="text" name="Username" id="Username" required minlength="5" maxlength="10">
                 </div>
 
                 <div>
                     <label for="Password">Mot de passe: </label>
-                    <input type="password" name="Password" id="Password">
+                    <input type="password" name="Password" id="Password" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                 </div>
 
                 <div>
@@ -42,15 +43,19 @@
 
                 <div>
                     <label for="Occupation">Occupation: </label>
-                    <input type="text" name="Occupation" id="Occupation">
+                    <input type="text" name="Occupation" id="Occupation" required>
                 </div>
-                <div>
+                <div id="desc">
                     <label for="Description">Description: </label>
-                    <textarea name="Description" id="Description" rows="4" cols="50"> </textarea>
+                    <textarea name="Description" id="Description" rows="4" cols="50" required></textarea>
                 </div>
 
-                <input type="submit" value="Ajouter">
+                <input id="btn" type="submit" value="Ajouter">
             </section>
         </form>
+        <footer>
+            <a id="accueil" href="http://localhost:2000/index.html">Page d'acceuil</a>
+            <a id="login" href="http://localhost:2000/login">Se connecter</a>
+        </footer>
     </body>
 </html>

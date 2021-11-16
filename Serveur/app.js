@@ -42,6 +42,7 @@ app.post("/connection", async (req, res) => {
     try {
         let userInfo = await db.getUserInfo(loginInfo)
         if (userInfo !== null) {
+            delete userInfo.Password
             return res.status(200).json({
                 "success": true,
                 "data": userInfo

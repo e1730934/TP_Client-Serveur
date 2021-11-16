@@ -3,19 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
+        <link rel="stylesheet" href="../formulaire/login.css">
         <script src="../formulaire/login.js"></script>
     </head>
     <body>
-        <form onsubmit=" connection(event)">
-            <div>
-                <label for="Username"> Nom d’utilisateur/courriel: </label>
-                <input type="text" name="Username" id="Username" autocomplete="username" placeholder="Nom d’utilisateur/courriel" required>
+        <div id="bg-img"></div>
+
+            <header><h1>Connection</h1></header>
+            <form onsubmit=" connection(event)">
+                <div>
+                    <label for="Username"> Nom d’utilisateur/courriel: </label>
+                    <input type="text" name="Username" id="Username" autocomplete="username"
+                           placeholder="Nom d’utilisateur/courriel" required>
+                </div>
+                <div>
+                    <label for="Password"> Mot de passe: </label>
+                    <input type="password" name="Password" id="Password" autocomplete="current-password"
+                           placeholder="Mot de passe" required>
+                </div>
+                <input id="btn" type="submit" value="Se connecter">
+            </form>
+            <div id="erreurConnection">
+                Utilisateur ou mot de passe incorrecte.
             </div>
-            <div>
-                <label for="Password"> Mot de passe: </label>
-                <input type="password" name="Password" id="Password" autocomplete="current-password" placeholder="Mot de passe" required>
-            </div>
-            <input type="submit" value="Se connecter">
-        </form>
+            <footer>
+                <a id="accueil" href="http://localhost:2000/index.html">Page d'acceuil</a>
+                <a id ="signup" href="http://localhost:2000/signup">Créer un compte d’utilisateur</a>
+            </footer>
+
     </body>
 </html>
