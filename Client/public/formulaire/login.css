@@ -2,7 +2,8 @@
     opacity: 0;
     color: red;
     font-weight: bold;
-
+    text-align: center;
+    text-transform: uppercase;
 }
 body{
     background-color: #97FFE3;

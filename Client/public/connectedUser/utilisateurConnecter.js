@@ -17,7 +17,7 @@ function logout() {
         let div = document.getElementById("userDataDIV")
         div.remove()
         localStorage.clear();
-        window.location.href = "http://localhost:2000/";
+        window.location.href = "http://localhost:2000/login";
     } catch (e) {
         alert("L'utilisation du bouton 'Précédent' cause l'erreur suivante:  " + e.message)
         window.location.href = "http://localhost:2000/"
