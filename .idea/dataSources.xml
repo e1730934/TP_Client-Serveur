@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="database" uuid="fb29c711-fd6d-4e08-a2a1-2ae304eb5586">
+    <data-source source="LOCAL" name="database [2]" uuid="acb389a5-c0ea-4a93-8181-92c86d233812">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Bilal\WebstormProjects\TP Client-Serveur\Serveur\database\database.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bilal\WebstormProjects\TP_Client-Serveur\Serveur\database\database.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
