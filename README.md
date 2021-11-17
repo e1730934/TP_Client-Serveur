@@ -6,8 +6,8 @@ Réalisé par Bilal Khendaf - E1730934
 <br/>
 <br/>
 
-Travail présenté à Fostine, Samuel 
-Dans le cardre du cours 420-3D2, Groupe 02
+Travail présenté à Fostine, Samuel <br/>
+Dans le cardre du cours 420-3D2, Groupe 02 <br/>
 APPLICATIONS WEB 1
 
 
