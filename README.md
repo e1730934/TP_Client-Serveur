@@ -25,6 +25,6 @@ APPLICATIONS WEB 1
  3. `npm start`
 
 
-### Index
+### Acceuil
 Mon application frontale roule sur *http://localhost:2000*
 
